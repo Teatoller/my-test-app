@@ -18,7 +18,7 @@ describe('App', () => {
     expect(screen.queryByText(/Searches for JavaScript/)).toBeNull();
   });
 
-  test('renders App component', async () => {
+  test('renders App input text', async () => {
     render(<App />);
 
     expect(screen.queryByText(/Signed in as/)).toBeNull();
@@ -28,12 +28,7 @@ describe('App', () => {
     // screen.debug();
   });
 
-  
-
-});
-
-describe('App', () => {
-  test('renders App component', async () => {
+  test('renders App fireEvent input', async () => {
     render(<App />);
  
     // wait for the user to resolve
@@ -48,10 +43,8 @@ describe('App', () => {
  
     expect(screen.getByText(/Searches for JavaScript/)).toBeInTheDocument();
   });
-});
 
-describe('App', () => {
-  test('renders App component', async () => {
+  test('renders App  input userEvent', async () => {
     render(<App />);
  
     // wait for the user to resolve
@@ -66,5 +59,8 @@ describe('App', () => {
       screen.getByText(/Searches for JavaScript/)
     ).toBeInTheDocument();
   });
+
 });
+
+
 
