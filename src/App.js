@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Hadithi from './components/Hadithi/Hadithi';
 import Search from './components/Search/Search';
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
       </Search>
 
       <p>Searches for {search ? search : '...'}</p>
+      <Hadithi/>
     </div>
   );
 }

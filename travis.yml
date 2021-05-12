@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+directories:
+  - travis cache --delete
+  - node_modules
+before_install:
+  - npm install
+install:
+  - npm install
+cache:
+  npm: false
+  directories:
+    - travis cache --delete
+    - node_modules
+before_script:
+
+script:
+  - npm run test
+  - npm run build
+notifications:
+  email:false
