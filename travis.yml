@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+directories:
+  - travis cache --delete
+  - node_modules
+before_install:
+  - npm install
+install:
+  - npm install
+cache:
+  npm: false
+  directories:
+    - travis cache --delete
+    - node_modules
+script:
+  - npm run test
+  - npm run build
+after_script:
+  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
+notifications:
+  email:false

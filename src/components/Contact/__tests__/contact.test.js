@@ -3,8 +3,8 @@ import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
 
 import Contact from "../Contact";
-
-jest.mock("/home/steven/Documents/sphere/reactprojects/my-test-app/src/components/Map/Map.js", () => {
+// src/components/Map/Map.js
+jest.mock("../../Map/Map.js", () => {
   return function DummyMap(props) {
     return (
       <div data-testid="map">
