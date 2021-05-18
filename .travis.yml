@@ -1,0 +1,35 @@
+language: node_js
+node_js:
+  - "stable"
+env:
+  global:
+  # Code Climate Reporter gotten from code climate
+    - CC_TEST_REPORTER_ID=86b4f96f3fb2bcfc6cd632e931e8460c082f8f1bc318f68a59c308726fba95fb
+cache:
+directories:
+  - travis cache --delete
+  - node_modules
+before_install:
+  - npm install
+install:
+  - npm install
+cache:
+  npm: false
+  directories:
+    - travis cache --delete
+    - node_modules
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - npm run test
+  - npm run build
+after_script:  
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+after_success: 
+  - npm run coverage
+  - npm run coveralls
+notifications:
+  email:false
