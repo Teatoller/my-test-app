@@ -17,6 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "coverage": "yarn test -- --coverage  --watchAll=false && cat ./coverage/lcov.info | coveralls",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
