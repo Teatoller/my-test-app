@@ -1,7 +1,6 @@
 # My-test-app
 
 [![Build Status](https://travis-ci.com/Teatoller/my-test-app.svg?branch=develop)](https://travis-ci.com/Teatoller/my-test-app)
-[![Build Status](https://travis-ci.com/Teatoller/my-test-app.svg?branch=develop)](https://travis-ci.com/Teatoller/my-test-app)
 [![Coverage Status](https://coveralls.io/repos/github/Teatoller/my-test-app/badge.svg?branch=develop)](https://coveralls.io/github/Teatoller/my-test-app?branch=develop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/427a4910e6a928a1e9ba/maintainability)](https://codeclimate.com/github/Teatoller/my-test-app/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/427a4910e6a928a1e9ba/test_coverage)](https://codeclimate.com/github/Teatoller/my-test-app/test_coverage)
