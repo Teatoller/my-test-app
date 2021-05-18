@@ -1,7 +1,6 @@
-# React Testing
+# My-test-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+[![Coverage Status](https://coveralls.io/repos/github/Teatoller/my-test-app/badge.svg?branch=develop)](https://coveralls.io/github/Teatoller/my-test-app?branch=develop)
 ## Available Scripts
 
 In the project directory, you can run:
